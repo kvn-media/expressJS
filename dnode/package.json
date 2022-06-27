@@ -1,0 +1,10 @@
+{
+    "name": "dnode",
+    "version": "0.0.1",
+    "private": true,
+
+    "dependencies": {
+        "cookie": "0.0.4",
+        "dnode": "1.0.0"
+    }
+}
