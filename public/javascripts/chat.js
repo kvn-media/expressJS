@@ -1,4 +1,5 @@
-var socket = io.socket('http://localhost');
+// var socket = io.socket('http://localhost');
+var socket = io.connect(window.location.hostname);
 $(document).ready(function() {
     $('.chat-widget').hide();
     $('#join-chat').click(function() {

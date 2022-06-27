@@ -104,8 +104,8 @@ app.get('/api/trades', function(req, res) {
 
 db.open(function() {
   nocklib.createSocket(app);
-  submitRandomOrder();
-  app.listen(3000);
+  var port = process.env.PORT || 3000;
+  app.listen(port)
   for (var i = 0; i < stocks.length; i++) {
     submitRandomOrder(i);
   }
